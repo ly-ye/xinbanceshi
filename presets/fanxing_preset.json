@@ -1,0 +1,57 @@
+{
+  "name": "繁星V3推荐预设",
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "top_k": 40,
+  "min_p": 0.05,
+  "repetition_penalty": 1.1,
+  "frequency_penalty": 0.2,
+  "presence_penalty": 0.1,
+  "max_tokens": 4096,
+  "preset_notes": "默认均衡预设。严谨任务(代码/调试/分析)建议temperature=0.3-0.5, top_p=0.85; 创意任务(写作/设计/脑暴)建议temperature=0.9, top_p=0.95, presence_penalty=0.2",
+  "task_profiles": {
+    "balanced": {
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "top_k": 40,
+      "min_p": 0.05,
+      "repetition_penalty": 1.1,
+      "frequency_penalty": 0.2,
+      "presence_penalty": 0.1,
+      "max_tokens": 4096
+    },
+    "coding": {
+      "temperature": 0.4,
+      "top_p": 0.85,
+      "top_k": 30,
+      "min_p": 0.08,
+      "repetition_penalty": 1.05,
+      "frequency_penalty": 0.1,
+      "presence_penalty": 0.05,
+      "max_tokens": 8192,
+      "note": "代码开发/调试/分析：低随机性，高精确性"
+    },
+    "creative": {
+      "temperature": 0.9,
+      "top_p": 0.95,
+      "top_k": 50,
+      "min_p": 0.03,
+      "repetition_penalty": 1.15,
+      "frequency_penalty": 0.3,
+      "presence_penalty": 0.2,
+      "max_tokens": 4096,
+      "note": "创意写作/设计脑暴/内容创作：高创造性"
+    },
+    "planning": {
+      "temperature": 0.5,
+      "top_p": 0.88,
+      "top_k": 35,
+      "min_p": 0.06,
+      "repetition_penalty": 1.08,
+      "frequency_penalty": 0.15,
+      "presence_penalty": 0.1,
+      "max_tokens": 4096,
+      "note": "DAG规划/方案设计：平衡逻辑与创意"
+    }
+  }
+}

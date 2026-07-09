@@ -1,0 +1,19 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build intermediate files (可选保留，但build目录是构建产物)
+build/
+
+# Temp files
+*.tmp
+*.temp
+*.log
